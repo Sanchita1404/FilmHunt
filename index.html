@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilmHunt - Movie Search</title>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <b href="#" class="nav-logo">FilmHunt</b>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="header-container">
+            <h1>Welcome to FilmHunt</h1>
+            <div class="filters">
+                <select id="genreSelect">
+                    <option value="">Select Genre</option>
+                    <option value="action">Action</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="drama">Drama</option>
+                    <option value="horror">Horror</option>
+                    <option value="romance">Romance</option>
+                </select>
+                <select id="languageSelect">
+                    <option value="">Select Language</option>
+                    <option value="Hi">Hindi</option>
+                    <option value="en">English</option>
+                    <option value="Bn">Bengali</option>
+                </select>
+                <input type="text" id="actorInput" placeholder="Enter actor/actress name...">
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Enter movie title...">
+            <button id="searchButton">Search</button>
+        </div>
+
+        <div class="gallery" id="galleryContainer">
+            <div class="gallery-item">
+                <img src="image1.jpg" alt="Movie 1">
+            </div>
+            <div class="gallery-item">
+                <img src="image2.jpg" alt="Movie 2">
+            </div>
+            <div class="gallery-item">
+                <img src="image3.jpg" alt="Movie 3">
+            </div>
+            <div class="gallery-item">
+                <img src="image4.jpg" alt="Movie 4">
+            </div>
+            <div class="gallery-item">
+                <img src="image5.jpg" alt="Movie 5">
+            </div>
+        </div>
+
+        <div class="results" id="resultsContainer">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
